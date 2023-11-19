@@ -1,0 +1,13 @@
+#+title: Resume
+#+author: Troy Fischer
+
+My current resume using the [[https://www.overleaf.com/latex/templates/deedy-cv/bjryvfsjdyxz][deedy-cv]] template.
+
+* Notes
++ Uses =xelatex= rather than =pdflatex=
++ The =resume.org= file contains the necessary configurations to compile
+
+** Homebrew
+#+begin_src sh
+brew install --cask mactex
+#+end_src
