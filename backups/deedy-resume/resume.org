@@ -1,0 +1,346 @@
+#+LATEX_CLASS: deedy-resume
+#+LATEX_HEADER: \usepackage{enumerate}
+#+LATEX_COMPILER: xelatex
+#+OPTIONS: toc:nil title:nil author:nil date:nil
+#+startup: overview
+
+#+BEGIN_SRC emacs-lisp :exports none :results none :eval always
+(add-to-list 'org-latex-classes '("deedy-resume" "\\documentclass[letterpaper]{deedy-resume}"))
+#+END_SRC
+* Name Section :ignore:
+#+begin_src latex
+%\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Troy}{Fischer}{ % Your name
+%\urlstyle{same}\url{http://troyfischer.net} \\ % Your website, LinkedIn profile or other web address
+troytfischer@gmail.com | 772.678.2026 % Your contact information
+}
+#+end_src
+* Left Column :ignore:
+#+begin_src latex
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+#+end_src
+** Education :ignore:
+#+begin_src latex
+\section{Education}
+\subsection{University of Florida}
+\descript{BS in Computer Science}
+\location{Graduated May 2019 | Gainesville, FL \\ Major GPA: 3.73\\ Cum. GPA: 3.67}
+
+\sectionspace % Some whitespace after the section
+
+\section{Certifications}
+\href{https://www.credly.com/badges/6cfa3e1d-b75e-4a53-a16b-acdf66ca04e3/public_url}{\underline{\textbf{AWS Certified Solutions Architect}}}
+
+\sectionspace
+#+end_src
+** Links :ignore:
+#+begin_src latex
+\section{Links}
+LinkedIn: \href{https://www.linkedin.com/in/troy-fischer-805661186/}{\underline{\textbf{linkedin.com/troy-fischer}}} \\
+Github: \href{https://github.com/troyfischer}{\underline{\textbf{github.com/troyfischer}}} \\
+% Website: \href{https://troyfischer.net/}{\underline{\textbf{troyfischer.net}}} \\
+\sectionspace
+#+end_src
+** Coursework :ignore:
+#+begin_src latex
+\section{CourseWork}
+Artificial Intelligence \\
+Database Systems \\
+Data Structures and Algorithms \\
+Linear Algebra \\
+Numerical Analysis \\
+Operating Systems \\
+Software Engineering \\
+\sectionspace
+#+end_src
+
+** Skills :ignore:
+#+begin_src latex
+\section{Skills}
+
+\subsection{Programming}
+\textbf{Over 5000 lines:} \\
+Python \textbullet{} Java \\
+\textbf{Over 1000 lines:} \\
+C++ \textbullet{} Javascript \textbullet{} Bash \\
+\textbf{Familiar with:} \\
+SQL \textbullet{} YAML
+
+\sectionspace
+\subsection{Technologies}
+\textbf{Amazon Web Services} \\
+Lambda \textbullet{} SQS \textbullet{} S3\\
+\textbf{Container Management} \\
+Kubernetes \textbullet{} Docker
+
+
+\sectionspace
+\subsection{Environments}
+Linux \textbullet{} MacOS
+
+\sectionspace
+\subsection{Tools}
+Jira \textbullet{} Git \textbullet{} Confluence \\
+Emacs \textbullet{} Vim \textbullet{} PyCharm
+#+end_src
+** Achievements :ignore:
+#+begin_src latex
+\sectionspace % Some whitespace after the section
+\section{Achievements}
+Parsons Game Changer Award x 2 \\
+Florida Academic Scholars Award \\
+Cum Laude Honors \\
+Dean's List
+#+end_src
+** End Column :ignore:
+#+begin_src latex
+\end{minipage} % The end of the left column
+\hfill
+#+end_src
+
+* Right Column :ignore:
+#+begin_src latex
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+#+end_src
+** Work Experience :ignore:
+#+begin_src latex
+\section{Work Experience}
+#+end_src
+*** Capital One :ignore:
+#+begin_src latex
+\runsubsection{Capital One}
+\descript{| Software Engineer - Principal Associate}
+\location{Jan 2024 - Present | Chicago, IL}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Releasing the second iteration of a brand new platform intended to provide real time dynamic offers.
+\item Beginning an iniative to decommission our legacy credit card decisioning service which is projected to save \$1.5M per year in 'run the engine' costs and \$367k per year in database costs.
+\end{tightitemize}
+
+\sectionspace
+
+\runsubsection{Capital One}
+\descript{| Software Engineer - Senior Associate}
+\location{Feb 2022 - Jan 2024 | Chicago, IL}
+\begin{tightitemize}
+\item Completed a feature launch estimated to save the company \$6M anually by preventing undue credit card rewards.
+\item Authored code for multiple AWS lambda deployments from initial design to production release.
+\item Focused on low latency 'on demand' data transformations using serverless AWS infrastructure to drive real time business decisioning.
+\item Implemented dynamic dependency resolution for data transformations on a per request basis.
+\item Instrumented performance tests using the k6 framework to ensure our platform could handle our latency and transactions per second requirements.
+\item Created a 'feature authoring' self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.
+\end{tightitemize}
+
+\sectionspace
+#+end_src
+
+*** L3Harris :ignore:
+#+begin_src latex
+\runsubsection{L3Harris}
+\descript{| Software Engineer - Senior Associate}
+\location{March 2021 - Feb 2022 | Palm Bay, FL}
+\begin{tightitemize}
+\item Maintained a PHP backend to process command and control requests from a browser based GUI.
+\item Gained experience using JQuery to provide dynamic content updates.
+\item Upgraded our PHP MVC framework from Yii 1.1 to Yii 2.0.
+\item Developed automated test suites for SOAP web services using SoapUI.
+\end{tightitemize}
+
+\sectionspace
+#+end_src
+*** Parsons :ignore:
+#+begin_src latex
+\runsubsection{Parsons}
+\descript{| Software Engineer - Associate}
+\location{July 2019 - February 2021 | Centreville, VA}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Identified and implemented a solution that improved file upload speeds by 50\% by parellelizing file upload chunks.
+\item Used the Java Kafka API to allow communication between microservices in an event driven architecture.
+\item Maintained an automated test suite using Junit4 and led an initiative towards test driven development.
+\item Standardized API creation using the OpenAPI specification which increased adherence to an MVC architecture.
+\end{tightitemize}
+
+\sectionspace
+#+end_src
+
+*** University of Florida :ignore:
+#+begin_src latex
+\runsubsection{University of Florida}
+\descript{| Research Assistant}
+\location{January 2019 – July 2019 | Gainesville, FL}
+Link to Research Paper: \href{https://www.sciencedirect.com/science/article/abs/pii/S0304405X20300635}{\underline{\textbf{Investor ideology}}}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Designed programs in Python that automatically gathered data from various pension funds.
+\item Utilized Selenium web driver to expose data beyond what is contained in the server's response.
+\item Successfully collected over 1GB of total data to date.
+\end{tightitemize}
+\sectionspace
+#+end_src
+
+*** Meola Technology :noexport:
+#+begin_src latex
+\runsubsection{Meola Technology}
+\descript{| Network Intern}
+
+\location{May 2018 – Aug 2018 | Palm City, FL}
+\begin{tightitemize}
+\item Gained experience setting up and configuring network equipment including routers, switches, and wireless access points.
+\item Explained technical issues and solutions to clients.
+\item Diagnosed issues with computer networks at client residencies.
+%% \item Installed and configured media hardware.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+#+end_src
+** Course Work :noexport:
+#+begin_src latex
+\section{Relevant Coursework}
+#+end_src
+*** Software Engineering :ignore:
+#+begin_src latex
+\runsubsection{Software Engineering}
+\descript{}
+\location{Spring 2019}
+\begin{tightitemize}
+\item Examined the software development life cycle of the waterfall and agile methodologies.
+\item Incorporated the agile software development method in building a web application using MongoDB, ExpressJS, AngularJS, and NodeJS.
+\item Investigated software testing methods including unit, regression, automated and manual.
+\end{tightitemize}{}
+
+\sectionspace % Some whitespace after the section
+#+end_src
+*** Data Structures and Algorithms :ignore:
+#+begin_src latex
+\runsubsection{Data Structures and Algorithms}
+\descript{}
+\location{Spring 2018}
+\begin{tightitemize}
+\item Explored various data structures including lists, stacks, queues, trees, tables, and graphs. Gained understanding of the space and time complexities of each.
+\item Analyzed sorting algorithms such as bubble, insertion, selection, merge, quick, and shell. Educated on the performance differences between them.
+\item Learned to choose a data structure or algorithm based on situational appropriateness.
+\end{tightitemize}{}
+#+end_src
+*** Artificial Intelligence :ignore:
+#+begin_src latex
+\runsubsection{Artificial Intelligence}
+\descript{}
+\location{Fall 2018}
+\begin{tightitemize}
+\item Explored uninformed search methods including breadth first, depth first, and uniform cost.
+\item Designed uniformed search algorithms to solve Berkeley Pacman mazes.
+\item Analyzed informed search methods such as best-first, greedy best-first, and A*.
+\item Learned to use the minimax algorithm and further enhance it using alpha-beta pruning.
+\end{tightitemize}
+#+end_src
+*** Database Systems :ignore:
+#+begin_src latex
+\runsubsection{Database Systems}
+\descript{}
+\location{Fall 2018}
+\begin{tightitemize}
+\item Designed entity relationship diagrams for mock domains.
+\item Studied relational algebra, relational calculus, SQL, and the relational model.
+\item Explored logical database design. Learned about functional dependencies and normal forms.
+\item Gained knowledge in RDBMS functions such as transactions, database modifications, and triggers.
+\end{tightitemize}
+#+end_src
+*** Numerical Analysis :ignore:
+#+begin_src latex
+\runsubsection{Numerical Analysis}
+\descript{}
+\location{Spring 2019}
+\begin{tightitemize} % \item Explored properties of matrices and vectors. % \item Educated on methods of solving linear systems such as elimination matrices, LU decomposition, and Choleksy decomposition.
+\item Studied optimization, convexity, and methods of gradient descent such as steepest descent and Newton's method.
+\item Created a homegrown least squares classifier and compared accuracy to industry strength classifiers.
+\end{tightitemize}
+#+end_src
+*** Operating Systems :ignore:
+#+begin_src latex
+\runsubsection{Operating Systems}
+\descript{}
+\location{Fall 2018}
+\begin{tightitemize}
+\item Learned the fundamentals of processes including process life cycle, memory layout, interrupts, and scheduling.
+\item Explored the differences between threads and processes and evaluated when to choose one versus the other.
+\item Gained hands-on experience modifying the Linux kernel in various projects.
+\end{tightitemize}
+#+end_src
+
+** Projects :noexport:
+#+begin_src latex
+\section{Project Experience}
+#+end_src
+
+*** Blockchain Analysis :noexport:
+#+begin_src latex
+\runsubsection{Blockchain Analysis}
+\descript{| Senior Capstone Project}
+\location{Jan 2019 - April 2019 | Gainesville, FL}
+\begin{tightitemize}
+\item Designed an algorithm to detect cycles in cryptocurrency transactions.
+\item Used a breadth first search to construct a two layer graph starting from an initial coin offering's main distribution wallet.
+\item Applied a depth first search to start from every first sender and traverse to every possible last receiver, noting any duplicate addresses encountered in the algorithm.
+\end{tightitemize}
+\sectionspace
+#+end_src
+
+*** Personal Website :noexport:
+#+begin_src latex
+% PERSONAL WEBSITE
+\runsubsection{troyfischer.net}
+\descript{| Personal Website}
+\location{Apr 2019 - Present}
+\begin{tightitemize}
+\item Constructed a website using Python's flask framework.
+\item Integrated SQLAlchemy to store posts about past and present projects.
+\item Designed bash scripts to synchronize local code with remote code automatically.
+\item Deployed the website using Digital Ocean and handled all Nginx server configurations.
+\end{tightitemize}{}
+\sectionspace
+#+end_src
+*** Tweet App :noexport:
+#+begin_src latex
+\runsubsection{TweetApp}
+\descript{| Twitter Data Visualization Web Application }
+\location{Feb 2019 – April 2019 | Gainesville, FL}
+\begin{tightitemize}
+\item Devised a program in NodeJS to request data from Twitter's API that was subsequently directed back to an AngularJS controller.
+\item Developed AngularJS controllers and factories in order to process both the data requests and the consequent parsing, formatting, and displaying of the data.
+\item Engineered a MongoDB schema for storing users of our application.
+\item Learned user authentication and session management with JSON web tokens.
+\end{tightitemize}
+\sectionspace % Some whitespace after the section
+#+end_src
+*** Dungeon Escape :noexport:
+#+begin_src latex
+\runsubsection{Dungeon Escape}
+\descript{| 2D Platform Game}
+\location{Feb 2017 - Apr 2017 | Gainesville, FL}
+\begin{tightitemize}
+\item Improved leadership skills as the project lead of a 2D platform based game written in C++.
+\item Organized team meetings, delegated work, and ensured a high-quality final product.
+\item Implemented object oriented design principles and the Simple DirectMedia Layer library to handle the graphics.
+\item Created a basic physics engine and learned to incorporate animation.
+\end{tightitemize}{}
+\sectionspace % Some whitespace after the section
+#+end_src
+
+*** Interpreter for BC :noexport:
+#+begin_src latex
+\runsubsection{Interpreter for bc (programming language)}
+\descript{| Project Lead}
+\location{Feb 2019 – Mar 2019 | Gainesville, FL}
+I was the lead developer for an interpreter of the bc programming language using Ocaml. We relied on functional and recursive design patterns for this implementation. We successfully implemented all of the basic functions of bc as well as more complex functions such as recursive function calls.
+\sectionspace % Some whitespace after the section
+#+end_src
+** End Column :ignore:
+#+begin_src latex
+\end{minipage} % The end of the right column
+#+end_src
+* End Document :ignore:
+#+begin_src latex
+\end{document}
+#+end_src
