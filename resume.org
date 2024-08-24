@@ -175,8 +175,6 @@
         \resumeItem{Standardized API creation using the OpenAPI specification which increased adherence to an MVC architecture.}
       \resumeItemListEnd
 #+end_src
-*** University of Florida :ignore:
-
 *** End Experience :ignore:
 #+begin_src latex
   \resumeSubHeadingListEnd
