@@ -133,22 +133,23 @@
       {Software Engineer - Principal}{Jan 2024 -- Present}
       {Capital One}{Chicago, IL}
       \resumeItemListStart
-        \resumeItem{Consolidated our current feature computation service into a single AWS lambda function, cutting down on RTE and the high provisioned concurrency usage caused by our original architecture.}
-        \resumeItem{Received director+ confirmation that management wants to move forward with my implementation for our enterprise on demand solution.}
-        \resumeItem{Contributed to the release of the second iteration of a brand new platform intended to provide real time dynamic credit card offers.}
-        \resumeItem{Improved tooling for feature authoring through command line utilities that allow a feature author to see QA level results directly from their local machine.}
+        \resumeItem{Consolidated our current feature computation service down from 5 separate deployments to 1.}
+        \resumeItem{Cut our provisioned concurrency costs by 95\% by taking advantage of auto scaling policies.}
+        \resumeItem{Decreased the size of our application deployment by nearly 66\% from 28MB to 10MB}
         \resumeItem{Replaced our legacy feature computation service with our new serverless system which is projected to save \$1.5M per year in RTE costs and \$367k per year in database costs.}
+        \resumeItem{Improved tooling for feature authoring through command line utilities that allow authors to see live results from their local machine.}
+        \resumeItem{Received director+ confirmation that the enterprise will be moving forward with my on demand solution.}
       \resumeItemListEnd
 
    \resumeSubSubheading
     {Software Engineer - Senior Associate}{Feb 2022 - Jan 2024}
     \resumeItemListStart
-        \resumeItem{Focused on low latency on demand data transformations using serverless AWS infrastructure to drive real time business decisioning.}
+        \resumeItem{Built solutions for on demand data transformations using serverless AWS infrastructure to drive credit card decisioning processes.}
         \resumeItem{Authored code for multiple AWS lambda deployments from initial design to production release.}
         \resumeItem{Completed a feature launch estimated to save the company \$6M anually by preventing undue credit card rewards.}
-        \resumeItem{Implemented the topological sort algorithm to enable dynamic dependency resolution for feature computations on a per request basis.}
-        \resumeItem{Instrumented performance tests using the k6 framework to ensure our platform could handle our latency and transactions per second requirements.}
-        \resumeItem{Created a feature authoring self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.}
+        \resumeItem{Implemented the topological sort algorithm to enable dynamic dependency resolution for on demand requests.}
+        \resumeItem{Instrumented performance tests using the k6 framework to ensure our service level agreements.}
+        \resumeItem{Designed a feature authoring self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.}
     \resumeItemListEnd
 #+end_src
 *** L3Harris :ignore:
