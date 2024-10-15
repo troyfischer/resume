@@ -147,7 +147,7 @@
     \resumeItemListStart
         \resumeItem{Built solutions for on demand data transformations using serverless AWS infrastructure to drive credit card decisioning processes.}
         \resumeItem{Authored code for multiple AWS lambda deployments from initial design to production release.}
-        \resumeItem{Completed a feature launch estimated to save the company \$6M annually by preventing undue credit card rewards.}
+        \resumeItem{Completed a feature launch estimated to save the company \$6M annually by stopping undue credit card rewards.}
         \resumeItem{Implemented the topological sort algorithm to enable dynamic dependency resolution for on demand requests.}
         \resumeItem{Instrumented performance tests using the k6 framework to ensure our service level agreements.}
         \resumeItem{Designed a feature authoring self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.}
