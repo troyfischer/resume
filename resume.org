@@ -137,8 +137,9 @@
         \resumeItem{Cut our provisioned concurrency costs by 95\% by taking advantage of auto scaling policies.}
         \resumeItem{Decreased the size of our application deployment by nearly 66\% from 28MB to 10MB}
         \resumeItem{Replaced our legacy feature computation service with our new serverless system which is projected to save \$1.5M per year in RTE costs and \$367k per year in database costs.}
-        \resumeItem{Improved tooling for feature authoring through command line utilities that allow authors to see live results from their local machine.}
-        \resumeItem{Received director+ confirmation that the enterprise will be moving forward with my on demand solution.}
+        \resumeItem{Improved authoring tools with CLI utilities, enabling live results on local machines.}
+        \resumeItem{Modularized feature computation libraries to support flexible installation of any arbitrary set.}
+        \resumeItem{Received director+ confirmation the organization will move forward with my on demand solution as the target for enterprise standardization.}
       \resumeItemListEnd
 
    \resumeSubSubheading
@@ -146,7 +147,7 @@
     \resumeItemListStart
         \resumeItem{Built solutions for on demand data transformations using serverless AWS infrastructure to drive credit card decisioning processes.}
         \resumeItem{Authored code for multiple AWS lambda deployments from initial design to production release.}
-        \resumeItem{Completed a feature launch estimated to save the company \$6M anually by preventing undue credit card rewards.}
+        \resumeItem{Completed a feature launch estimated to save the company \$6M annually by preventing undue credit card rewards.}
         \resumeItem{Implemented the topological sort algorithm to enable dynamic dependency resolution for on demand requests.}
         \resumeItem{Instrumented performance tests using the k6 framework to ensure our service level agreements.}
         \resumeItem{Designed a feature authoring self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.}
@@ -170,7 +171,7 @@
       {Software Engineer - Associate}{July 2019 -- Feb. 2021}
       {Parsons}{Centreville, VA}
       \resumeItemListStart
-        \resumeItem{Identified and implemented a solution that improved file upload speeds by 50\% by parellelizing file upload chunks.}
+        \resumeItem{Identified and implemented a solution that improved file upload speeds by 50\% by parallelizing file upload chunks.}
         \resumeItem{Used the Java Kafka API to allow communication between microservices in an event driven architecture.}
         \resumeItem{Maintained an automated test suite using Junit4 and led an initiative towards test driven development.}
         \resumeItem{Standardized API creation using the OpenAPI specification which increased adherence to an MVC architecture.}
@@ -201,7 +202,7 @@
      \textbf{\href{https://www.credly.com/badges/6cfa3e1d-b75e-4a53-a16b-acdf66ca04e3?source=linked_in_profile}{AWS Certified Solutions Architect}} \\
      \textbf{AWS Services}{: Lambda, SQS, SNS, Dynamo, S3, Cloudformation, Cloudwatch, IAM } \\
      \textbf{Languages}{: Python, Java, C/C++ } \\
-     \textbf{Developer Tools}{: Doom Emacs } \\
+     \textbf{Developer Tools}{: Emacs, git, k6, Jenkins } \\
      \textbf{Libraries}{: pydantic, boto3, httpx, asyncio } \\
     }}
  \end{itemize}
