@@ -1,86 +1,83 @@
-#+latex_class: article
-#+latex_class_options: [letterpaper,11pt]
-#+OPTIONS: toc:nil title:nil author:nil date:nil
-#+LATEX_COMPILER: latexmk
-#+startup: overview
+% Created 2025-01-10 Fri 10:12
+\documentclass[letterpaper,11pt]{article}
 
-* Headers :ignore:
-#+latex_header: \usepackage{latexsym}
-#+latex_header: \usepackage[empty]{fullpage}
-#+latex_header: \usepackage{titlesec}
-#+latex_header: \usepackage{marvosym}
-#+latex_header: \usepackage[usenames,dvipsnames]{color}
-#+latex_header: \usepackage{verbatim}
-#+latex_header: \usepackage{enumitem}
-#+latex_header: \usepackage[hidelinks]{hyperref}
-#+latex_header: \usepackage{fancyhdr}
-#+latex_header: \usepackage[english]{babel}
-#+latex_header: \usepackage{tabularx}
-#+latex_header: \input{glyphtounicode}
-#+latex_header: \pagestyle{fancy}
-#+latex_header: \fancyhf{} % clear all header and footer fields
-#+latex_header: \fancyfoot{}
-#+latex_header: \renewcommand{\headrulewidth}{0pt}
-#+latex_header: \renewcommand{\footrulewidth}{0pt}
-#+latex_header:
-#+latex_header: % Adjust margins
-#+latex_header: \addtolength{\oddsidemargin}{-0.5in}
-#+latex_header: \addtolength{\evensidemargin}{-0.5in}
-#+latex_header: \addtolength{\textwidth}{1in}
-#+latex_header: \addtolength{\topmargin}{-.5in}
-#+latex_header: \addtolength{\textheight}{1.0in}
-#+latex_header:
-#+latex_header: \urlstyle{same}
-#+latex_header:
-#+latex_header: \raggedbottom
-#+latex_header: \raggedright
-#+latex_header: \setlength{\tabcolsep}{0in}
-#+latex_header:
-#+latex_header: % Sections formatting
-#+latex_header: \titleformat{\section}{
-#+latex_header:   \vspace{-4pt}\scshape\raggedright\large
-#+latex_header: }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-#+latex_header:
-#+latex_header: % Ensure that generate pdf is machine readable/ATS parsable
-#+latex_header: \pdfgentounicode=1
-#+latex_header:
-#+latex_header: %-------------------------
-#+latex_header: % Custom commands
-#+latex_header: \newcommand{\resumeItem}[1]{
-#+latex_header:   \item\small{
-#+latex_header:     {#1 \vspace{-2pt}}
-#+latex_header:   }
-#+latex_header: }
-#+latex_header:
-#+latex_header: \newcommand{\resumeSubheading}[4]{
-#+latex_header:   \vspace{-2pt}\item
-#+latex_header:     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-#+latex_header:       \textbf{#1} & #2 \\
-#+latex_header:       \textit{\small#3} & \textit{\small #4} \\
-#+latex_header:     \end{tabular*}\vspace{-7pt}
-#+latex_header: }
-#+latex_header:
-#+latex_header: \newcommand{\resumeSubSubheading}[2]{
-#+latex_header:     \item
-#+latex_header:     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-#+latex_header:      \textit{\small#1} & \textit{\small #2} \\
-#+latex_header:    \end{tabular*}\vspace{-7pt}
-#+latex_header: }
-#+latex_header: \newcommand{\resumeProjectHeading}[2]{
-#+latex_header:     \item
-#+latex_header:     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-#+latex_header:       \small#1 & #2 \\
-#+latex_header:     \end{tabular*}\vspace{-7pt}
-#+latex_header: }
-#+latex_header: \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-#+latex_header: \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-#+latex_header: \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-#+latex_header: \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-#+latex_header: \newcommand{\resumeItemListStart}{\begin{itemize}}
-#+latex_header: \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-* Imports :ignore:
-#+begin_src latex
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+{#1 \vspace{-2pt}}
+}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}\item
+\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & #2 \\
+\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\small#1 & #2 \\
+\end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\date{}
+\title{}
+\begin{document}
+
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
@@ -90,10 +87,6 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
-#+end_src
-* Resume :ignore:
-** Title :ignore:
-#+begin_src latex
 %----------HEADING----------
 %% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 %%   \textbf{\Large Troy Fischer} & Email : \href{mailto:troytfischer@gmail.com}{troytfischer@gmail}\\
@@ -106,26 +99,15 @@
     \href{https://www.linkedin.com/in/troy-fischer-805661186/}{\underline{linkedin.com/in/troy-fischer}} $|$
     \href{https://github.com/troyfischer}{\underline{github.com/troyfischer}}
 \end{center}
-#+end_src
-
-** Education :ignore:
-#+begin_src latex
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Florida}{Gainesville, FL}
       {Bachelor of Science in Computer Science}{Aug. 2015 -- May 2019}
   \resumeSubHeadingListEnd
-#+end_src
-
-** Experience :ignore:
-#+begin_src latex
 \section{Experience}
   \resumeSubHeadingListStart
-#+end_src
-*** Capital One :ignore:
-#+begin_src latex
-    \resumeSubheading
+\resumeSubheading
       {Software Engineer - Principal}{Jan 2024 -- Present}
       {Capital One}{Chicago, IL}
       \resumeItemListStart
@@ -148,10 +130,7 @@
         \resumeItem{Instrumented performance tests using the k6 framework to ensure our service level agreements.}
         \resumeItem{Designed a feature authoring self service framework allowing data analysts to build custom data transformations by translating business requirements to python code.}
     \resumeItemListEnd
-#+end_src
-*** L3Harris :ignore:
-#+begin_src latex
-    \resumeSubheading
+\resumeSubheading
       {Software Engineer - Senior Associate}{March 2021 -- Feb. 2022}
       {L3Harris}{Palm Bay, FL}
       \resumeItemListStart
@@ -160,10 +139,7 @@
         \resumeItem{Upgraded our PHP MVC framework from Yii 1.1 to Yii 2.0.}
         \resumeItem{Developed automated test suites for SOAP web services using SoapUI.}
     \resumeItemListEnd
-#+end_src
-*** Parsons :ignore:
-#+begin_src latex
-    \resumeSubheading
+\resumeSubheading
       {Software Engineer - Associate}{July 2019 -- Feb. 2021}
       {Parsons}{Centreville, VA}
       \resumeItemListStart
@@ -172,26 +148,13 @@
         \resumeItem{Maintained an automated test suite using Junit4 and led an initiative towards test driven development.}
         \resumeItem{Standardized API creation using the OpenAPI specification which increased adherence to an MVC architecture.}
       \resumeItemListEnd
-#+end_src
-*** End Experience :ignore:
-#+begin_src latex
-  \resumeSubHeadingListEnd
-#+end_src
-
-** Open Source Contributions :ignore:
-*** Doom Emacs :ignore:
-#+begin_src latex
+\resumeSubHeadingListEnd
 \section{Open Source Contributions}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Doom Emacs}{: \href{https://github.com/doomemacs/doomemacs/pull/7105}{\underline{Version Control Bugfix}}} \\
     }}
  \end{itemize}
-
-#+end_src
-
-** Technical Skills :ignore:
-#+begin_src latex
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -202,10 +165,4 @@
      \textbf{Libraries}{: pydantic, boto3, httpx, asyncio } \\
     }}
  \end{itemize}
-
-#+end_src
-** End Document :ignore:
-* Local variables :noexport:
-# local variables:
-# org-latex-default-packages-alist: nil
-# end:
+\end{document}
